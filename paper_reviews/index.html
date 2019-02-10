@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="paper_reviews">
-  {% for review in site.reviews  %}
+  {% for review in site.reviews  reversed %}
     <article class="paper_review">
 
       <h1><a href="{{ site.baseurl }}{{ review.url }}">{{ review.title }}</a></h1>
@@ -13,6 +13,9 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ review.url }}" class="read-more">Read More</a>
+      <div class="date">
+        Written on {{ review.date | date: "%B %e, %Y" }}
+      </div>
     </article>
   {% endfor %}
 </div>
