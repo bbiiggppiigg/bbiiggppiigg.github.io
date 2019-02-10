@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="paper_reviews">
+  {% for review in site.reviews  %}
+    <article class="paper_review">
+
+      <h1><a href="{{ site.baseurl }}{{ review.url }}">{{ review.title }}</a></h1>
+
+      <div class="entry">
+        {{ review.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ review.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

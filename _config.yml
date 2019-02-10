@@ -6,7 +6,7 @@
 name: BBIIGGPPIIGG
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Ph.D student in UW-Madison
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -21,7 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: bbiiggppiigg
   instagram:
   linkedin:
   pinterest:
@@ -34,7 +34,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: bbiiggppiigg
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
@@ -49,6 +49,18 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "reviews"
+    values:
+      layout: paper_review
+    
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -84,3 +96,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+
